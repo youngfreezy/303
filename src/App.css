@@ -10,3 +10,7 @@
 .published {
   background: lightgrey;
 }
+
+.post {
+  border-radius: 3px;
+}
