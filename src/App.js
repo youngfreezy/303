@@ -22,14 +22,16 @@ class App extends PureComponent {
   }
   render() {
     return (
-      <div className="App">
-        {" "}
+      <div className="flex-grid-fifths">
         {this.state.posts.map(post => {
           return (
             <Post
               key={post.id}
               title={post.title.rendered}
               content={post.content.rendered}
+              link={post.link}
+              status={post.status}
+              excerpt={post.excerpt.rendered}
             />
           );
         })}{" "}
